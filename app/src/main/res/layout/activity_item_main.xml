@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -23,22 +22,25 @@
                 android:id="@+id/actionbar_music"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/actionbar_music_selector"
-                android:button="@null" />
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@drawable/actionbar_music_selector" />
 
             <RadioButton
                 android:id="@+id/actionbar_discover"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/actionbar_discover_selector"
-                android:button="@null" />
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@drawable/actionbar_discover_selector" />
 
             <RadioButton
                 android:id="@+id/actionbar_friends"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/actionbar_friends_selector"
-                android:button="@null" />
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@drawable/actionbar_friends_selector" />
         </RadioGroup>
 
     </RelativeLayout>
