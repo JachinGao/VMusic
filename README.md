@@ -1,6 +1,7 @@
 # VMusic
 An app imitate the netease cloud music.
-![icon](introduce.png)
+
+![icon](introduce/introduce.png)
 
 ## notes
 This open source application is only for learning to use, if there are any infringement, please contact me to delete
