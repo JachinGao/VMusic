@@ -2,48 +2,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/actionbar_height"
-        android:background="#3F51B5">
+        android:layout_height="24dp"
+        android:background="@color/colorPrimary" />
 
-        <RadioGroup
-            android:id="@+id/radio_group"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:orientation="horizontal">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
 
-            <RadioButton
-                android:id="@+id/actionbar_music"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:button="@null"
-                android:drawableTop="@drawable/actionbar_music_selector" />
-
-            <RadioButton
-                android:id="@+id/actionbar_discover"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:button="@null"
-                android:drawableTop="@drawable/actionbar_discover_selector" />
-
-            <RadioButton
-                android:id="@+id/actionbar_friends"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:button="@null"
-                android:drawableTop="@drawable/actionbar_friends_selector" />
-        </RadioGroup>
-
-    </RelativeLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorPrimary"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="#cccccc" />
+    </FrameLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"

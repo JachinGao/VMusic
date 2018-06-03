@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ads"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jachin.vmusic.activities.AdsActivity">
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.gzc.vmusic.AdsActivity">
 
-    <ImageView
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/particleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@mipmap/ads_main" />
-</RelativeLayout>
+        pv:pv_background_color="?attr/colorPrimary"
+        pv:pv_host_text="VMusic"
+        pv:pv_host_text_anim_time="500"
+        pv:pv_host_text_size="26sp"
+        pv:pv_particle_text="1.0"
+        pv:pv_particle_text_size="14sp"
+        pv:pv_spread_anim_time="800"
+        pv:pv_text_anim_time="500"
+        pv:pv_text_color="#FFF" />
+
+</LinearLayout>
